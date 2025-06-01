@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Help Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Local Community Help Portal</h1>
+    <p>Post or view help requests in your neighborhood</p>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <form id="helpForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="category">Help Category:</label>
+        <select id="category" required>
+          <option value="">Select</option>
+          <option value="Groceries">Groceries</option>
+          <option value="Tutoring">Tutoring</option>
+          <option value="Transportation">Transportation</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="details">Details:</label>
+        <textarea id="details" required></textarea>
+
+        <button type="submit">Submit Request</button>
+        <p id="error" class="error"></p>
+      </form>
+    </section>
+
+    <section id="requests">
+      <h2>Posted Requests</h2>
+      <ul id="requestList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Local Community Portal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
